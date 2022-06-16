@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo da velha</title>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <h1>escolha o nivel de dificuldade</h1>
+    <select name="nivel" id="nivel">
+        <option value="1">nivel 1</option>
+        <option value="2">nivel 2</option>
+    </select>
+    <button onclick="comecar()">começar</button>
+
+    <script>
+        function comecar(){
+            var nivelJogoin = document.getElementById ("nivel").value;
+            window.location.href = "index2.html?" + nivelJogoin;
+        }
+    </script>
+</body>
+</html>
